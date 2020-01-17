@@ -52,7 +52,23 @@ namespace CourseApp
             Console.WriteLine("------------");
             Console.WriteLine(Equat(1.0, 2.0, 5));
 
-            Console.ReadKey();
+            Console.WriteLine("Enter name for your Sudno");
+            string n;
+            n = Console.ReadLine();
+            Sudno[] sudno = new Sudno[2];
+            sudno[1] = new Boat("Лодка");
+            sudno[2] = new Ship("Корабль");
+
+            foreach (var item in sudno)
+            {
+                
+                item.SetDisplacement();
+                item.SetLen();
+                item.GoTo();
+                item.Riffs();
+            }
+
+            Console.Read();
         }
     }
 }

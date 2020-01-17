@@ -7,7 +7,7 @@ namespace CourseApp.Tests
     public class DemoTest
     {
         [Theory]
-        [InlineData(1, 2, 2, -1.939)]
+        [InlineData(1, 2, 2, NaN)]
         [InlineData(1, 2, 5, 2.936)]
         public void TestEquat(double a, double b, double x, double exp)
         {
